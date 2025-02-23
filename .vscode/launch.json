@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "pwa-chrome",
+        "request": "launch",
+        "name": "Launch Chrome against localhost",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceFolder}",
+        "preLaunchTask": "npm: start",
+        "runtimeExecutable": "stable",
+        "sourceMaps": true,
+        "timeout": 10000
+      },
+      {
+        "type": "pwa-chrome",
+        "request": "launch",
+        "name": "Launch Chrome against network",
+        "url": "http://192.168.1.x:3000", // Replace with your actual IP
+        "webRoot": "${workspaceFolder}",
+        "preLaunchTask": "npm: start",
+        "runtimeExecutable": "stable",
+        "sourceMaps": true,
+        "timeout": 10000
+      }
+    ]
+  }
